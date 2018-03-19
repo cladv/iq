@@ -1,0 +1,16 @@
+<div class="form-container">
+  <mat-card>
+
+  <mat-card-actions>
+        <button mat-raised-button (click)="loginFb()">Ingresar con Facebook</button>
+      </mat-card-actions>
+      <mat-card-actions>
+            <button mat-raised-button (click)="loginGoogle()" color="primary">Ingresar con Google</button>
+      </mat-card-actions>
+      <mat-card-actions>
+        <button mat-raised-button routerLink="/login-email">Ingresar con Email</button>
+   </mat-card-actions> 
+   <a routerLink="/signup" routerLinkActive="active">Sin Cuenta? <strong>Cree su cuenta aqui</strong></a>
+  </mat-card>
+
+  </div>

@@ -1,1 +1,81 @@
 /* You can add global styles to this file, and also import other style files */
+
+/*
+@import "@angular/material/prebuilt-themes/indigo-pink.css"
+@import "@angular/material/prebuilt-themes/pink-bluegrey.css"
+@import "@angular/material/prebuilt-themes/indigo-pink.css"
+@import "@angular/material/prebuilt-themes/purple-green.css"
+*/ 
+@import "@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+.all-wrap {
+    min-height: 100vh;
+  }
+   
+  .page-wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+   
+  .content {
+    flex: 1;
+  }
+
+  
+.form-container {
+    background: white;
+    padding: 3.5em;
+    width: 90%;
+    left: 45%;
+}
+ 
+.google {
+    border: 1px solid #95989A;
+    background: #fff;
+    background-size: 25px;
+}
+ 
+.email {
+    background: #ECECEC;
+    background-size: 25px;
+}
+ 
+.create-account-txt {
+    text-align: center;
+    display: block;
+    margin: 15px 0;
+}
+ 
+.auth-btn {
+    background: #3B8598;
+    color: white;
+}
+ 
+input.input-txt {
+    background: #fff !important;
+    padding: 0.5em 1em;
+    font-size: 1.3em;
+    border: 1px solid #BBBBBB;
+    width: 90%;
+    margin-bottom: 1em;
+}
+
+.fb {
+    background:#3B5998 ;
+    background-size: 47px;
+    color:#fff;
+}
+   
+  /*
+   * Make the Component injected by Router Outlet full height:
+  main {
+    display: flex;
+    flex-direction: column;
+    > *:not(router-outlet) {
+      flex: 1;
+      display: block;
+    }
+  }
+   */
+ 
