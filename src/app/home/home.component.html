@@ -8,6 +8,9 @@
 	<h4>
 		<strong>Email:</strong> {{ authService.currentUserName }}
 	</h4>
+	<h4>
+		<strong>Provider:</strong> {{ authService.currentUser.providerId }}
+	</h4>
 	<button class="button" (click)="logout()">Logout</button>
 </div>
 </div>

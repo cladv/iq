@@ -16,6 +16,8 @@ export class LoginComponent implements OnInit {
     this.authService.googleLogin()
     ;
   }
+  loginFb() {
+  }
 }
 
 /* import { Component, OnInit } from '@angular/core';

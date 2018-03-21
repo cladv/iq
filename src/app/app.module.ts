@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 
 import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './menu/menu.component';
+
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { ProductComponent } from './product/product.component';
@@ -22,6 +23,7 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 
 import { environment} from '../environments/environment';
+import { DialogDeleteComponent } from './dialog-delete/dialog-delete.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -43,7 +45,8 @@ const routes: Routes = [
     HomeComponent,
     SignupComponent,
     LoginEmailComponent,
-    SignoutComponent
+    SignoutComponent,
+    DialogDeleteComponent
   ],
   imports: [
     BrowserModule,
@@ -55,6 +58,7 @@ const routes: Routes = [
     AngularFireAuthModule,
     RouterModule.forRoot(routes)
   ],
+  entryComponents: [DialogDeleteComponent],
   providers: [AuthService],
   bootstrap: [AppComponent]
 })

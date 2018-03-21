@@ -1,4 +1,4 @@
-<div class="form-container">
+<div class="form-container" *ngIf="(!authService.isUserEmailLoggedIn ); else alreadyLoggedIn">
   <mat-card>
 
   <mat-card-actions>
@@ -14,3 +14,10 @@
   </mat-card>
 
   </div>
+
+
+<ng-template #alreadyLoggedIn>
+    <p class="text-success">
+      Already logged in!
+    </p>
+  </ng-template>
